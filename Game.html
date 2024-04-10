@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div id="video-background">
+        <video playsinline autoplay muted loop>
+            <source src="globe_002.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="uniform-header">
+        <h1>Intro to Programming (CSC102)</h1>
+        <p id="subtitle">Play some rock, paper, scissors with me!</p>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Meme.html">Meme Index</a>
+        <a href="Game.html">Game</a>
+        <a href="Palindrome.html">Palindrome</a>
+        <a href="InputValidation.html">Input Validation</a>
+        <a href="Objectives.html">Objectives</a>
+    </div>
+    <img id="img" src="logo.png" style="width:120px;cursor:pointer" onclick="openNav()">
+
+    <h2>Rock, Paper, Scissors Web Game</h2> <!-- This tells the user "Rock, Paper, Scissors Web Game" is what they're about to play  -->
+    <p id="subtitle">Click below to play!</p> <!-- This tells the user to click below to play the game -->
+    <button id="PlayButton" class="game-button" onclick="playGame()">Play Game</button> <!-- This creates a button that the user can click to play the game. I had to create #game-button in main.css in order to separate my body from the button to play the game. The onclick= calls the playButton() function from the code.js file to execute. -->
+
+    <script src="functionality.js"></script>
+
+    <footer>
+        <p>Joey Monroe <br> University of Advancing Technology <br> 2625 W Baseline Rd <br> Tempe, AZ 85283</p>
+    </footer>
+</body>
+</html>

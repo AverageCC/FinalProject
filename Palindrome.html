@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div id="video-background">
+        <video playsinline autoplay muted loop>
+            <source src="globe_002.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="uniform-header">
+        <h1>Intro to Programming (CSC102)</h1>
+        <p id="subtitle">Palindrome Check</p>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Meme.html">Meme Index</a>
+        <a href="Game.html">Game</a>
+        <a href="Palindrome.html">Palindrome</a>
+        <a href="InputValidation.html">Input Validation</a>
+        <a href="Objectives.html">Objectives</a>
+    </div>
+    <img id="img" src="logo.png" style="width:120px;cursor:pointer" onclick="openNav()">
+
+    <h2>Palindrome Check</h2> <!-- This is the title of the webpage -->
+    <p id="subtitle">Click below to check for palindromes</p> <!-- This is the subtitle of the webpage -->
+    <input type="text" id="palindrome"> <!-- This is the input field for the user to input a string -->
+    <button onclick="palindromeCheck()">Check</button> <!-- This button calls the palindromeCheck() function from our linked palindromecheck.js file -->
+    <p id="result"></p> <!-- This displays the results from our query. Reference can be found on Line 12 & 14 of palindromeCheck.js -->
+
+    <script src="functionality.js"></script>
+
+    <footer>
+        <p>Joey Monroe <br> University of Advancing Technology <br> 2625 W Baseline Rd <br> Tempe, AZ 85283</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body::after {
+    content: ""; /* This allows me to draw the border by generating an empty text box */
+    position: absolute; /* This centers the outline of the textbox that wraps around my elements */
+    top: 50%; /* This sets the middle of my text box to be half way down the page */
+    left: 50%; /* This sets the middle of my text box to be half way from the side of the page */
+    width: 455px; /* This sets left to right to be 50% */
+    height: 550px; /* This sets top to bottom to be 50% */
+    background-color: #02bed3; /* This sets the color of the text box to white */
+    border: 2px solid black; /* This sets the border of the text box to be 2px thick and black */
+    border-radius: 60px; /* This sets the border to be rounded. The higher the pixels, the more curved the corners become */
+    transform: translate(-50%, -50%); /* This centers the text box in the middle of the page */
+    z-index: -1; /* This sets the text box to be behind the body of the page */
+}
