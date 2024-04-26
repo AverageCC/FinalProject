@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- This is the document type declaration for the HTML5 document -->
+<html lang="en"> <!-- This sets the default language of the page to English -->
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css"> <!-- This links the main.css file to the HTML file -->
 </head>
+
 <body>
-    <div id="video-background">
-        <video playsinline autoplay muted loop>
-            <source src="globe_002.mp4" type="video/mp4">
+    <div id="video-background"> <!-- This creates a div for the video background -->
+        <video playsinline autoplay muted loop> <!-- This creates a video element that constantly plays and is muted -->
+            <source src="globe_002.mp4" type="video/mp4"> <!-- This links the video file to the video element -->
         </video>
     </div>
+
     <div class="uniform-header">
         <h1>Intro to Programming (CSC102)</h1>
         <p id="subtitle">Play some rock, paper, scissors with me!</p>
     </div>
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
@@ -22,6 +25,7 @@
         <a href="InputValidation.html">Input Validation</a>
         <a href="Objectives.html">Objectives</a>
     </div>
+    
     <img id="img" src="logo.png" style="width:120px;cursor:pointer" onclick="openNav()">
 
     <h2>Rock, Paper, Scissors Web Game</h2> <!-- This tells the user "Rock, Paper, Scissors Web Game" is what they're about to play  -->

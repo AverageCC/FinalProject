@@ -1,4 +1,4 @@
-body::after {
+body::after { /* This creates a text box that wraps around my input validation page elements */
     content: ""; /* This allows me to draw the border by generating an empty text box */
     position: absolute; /* This centers the outline of the textbox that wraps around my elements */
     top: 50%; /* This sets the middle of my text box to be half way down the page */

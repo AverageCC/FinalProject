@@ -1,37 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- This is the document type declaration for the HTML5 document -->
+<html lang="en"> <!-- This sets the default language of the page to English -->
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css"> <!-- This links the main.css file to the HTML file -->
 </head>
+
 <body>
-    <div id="video-background">
-        <video playsinline autoplay muted loop>
-            <source src="globe_002.mp4" type="video/mp4">
+    <div id="video-background"> <!-- This creates a div for the video background -->
+        <video playsinline autoplay muted loop> <!-- This creates a video element that constantly plays and is muted -->
+            <source src="globe_002.mp4" type="video/mp4"> <!-- This links the video file to the video element -->
         </video>
     </div>
-    <div class="uniform-header">
-        <h1>Intro to Programming (CSC102)</h1>
-        <p id="subtitle">Come get your free meme here :D</p>
-    </div>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="Meme.html">Meme Index</a>
-        <a href="Game.html">Game</a>
-        <a href="Palindrome.html">Palindrome</a>
-        <a href="InputValidation.html">Input Validation</a>
-        <a href="Objectives.html">Objectives</a>
-    </div>
-    <img id="img" src="logo.png" style="width:120px;cursor:pointer" onclick="openNav()">
 
-    <p id="imageContainer">
+    <div class="uniform-header"> <!-- This creates a div for the header -->
+        <h1>Intro to Programming (CSC102)</h1> <!-- This creates an h1 element -->
+        <p id="subtitle">Come get your free meme here :D</p> <!-- This creates a p element with the id of 'subtitle' -->
+    </div>
+    
+    <div id="mySidenav" class="sidenav"> <!-- This creates a div for the side navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- This creates a button element that is the X in the corner when someone wants to close the navigation bar; reference line 5-7 closeNav function in functionality.js() -->
+        <a href="index.html">Home</a> <!-- This creates a link to the home page, index.html -->
+        <a href="Meme.html">Meme Index</a> <!-- This creates a link to the Meme Index page, Meme.html -->
+        <a href="Game.html">Game</a> <!-- This creates a link to the Game page, Game.html -->
+        <a href="Palindrome.html">Palindrome</a> <!-- This creates a link to the Palindrome page, Palindrome.html -->
+        <a href="InputValidation.html">Input Validation</a> <!-- This creates a link to the Input Validation page, InputValidation.html -->
+        <a href="Objectives.html">Objectives</a> <!-- This creates a link to the Objectives page, Objectives.html -->
+    </div>
+
+    <img id="img" src="logo.png" style="width:120px;cursor:pointer" onclick="openNav()"> <!-- This creates an image element that is the logo.png and when clicked it opens the navigation bar; reference line 1-3 openNav function in functionality.js() -->
+
+    <p id="imageContainer"> <!-- This creates a container for the image -->
         <img id="heheheha" src="heheheha.jpg"> <!-- This is an image of a very funni meme -->
     </p>
 
     <script src="functionality.js"></script>
 
-    <footer>
-        <p>Joey Monroe <br> University of Advancing Technology <br> 2625 W Baseline Rd <br> Tempe, AZ 85283</p>
+    <footer> <!-- This creates a footer element -->
+        <p>Joey Monroe <br> University of Advancing Technology <br> 2625 W Baseline Rd <br> Tempe, AZ 85283</p> <!-- This creates a footer element with my name, school, and address -->
     </footer>
 </body>
 </html>

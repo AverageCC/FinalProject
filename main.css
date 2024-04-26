@@ -1,4 +1,4 @@
-.uniform-header {
+.uniform-header { /* This is the class for the header which is our baseline for ALL  */
     color: white;
     height: 0;
     width: 100%;
@@ -8,7 +8,7 @@
     margin-top: 50px;
 }
 
-#video-background {
+#video-background { /* This is the video background for the page */
     position: fixed;
     right: 0;
     bottom: 0;
@@ -18,7 +18,7 @@
     z-index: -1;
 }
 
-#video-background video {
+#video-background video { /* This is the video background for the page */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,7 +30,7 @@
     object-fit: contain;
 }
 
-body {
+body { /* This sets a uniform body for each page */
     font-family: "Lato", sans-serif;
     background-color: rgba(0, 255, 255, 0.3);
     color: black; 
@@ -45,14 +45,14 @@ body {
     align-items: center;
 }
 
-h1 {
+h1 { /* This sets a uniform h1 for each page */
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
-h2 {
+h2 { /* This sets a uniform h2 for each page using the !important which tells css to overwrite a style as opposed to whatever the base is */
     color: white !important;
     padding-top: 115px;
     display: flex;
@@ -61,11 +61,11 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h2#valh2 {
+h2#valh2 { /* This overwrites the base formatting in order to be visible on my InputValidation H2 Header h2 id="valh2" */
     color: black !important;
 }
 
-#subtitle {
+#subtitle { /* This sets a uniform subtitle for each page */
     color: white !important;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ h2#valh2 {
     font-size: 20px;
 }
 
-table {
+table { /* This sets a uniform table for the objectives page */
     background-color: white;
     width: 100%;
     border-collapse: collapse;
@@ -83,13 +83,13 @@ table {
     box-sizing: border-box;
 }
 
-th, td {
+th, td { /* This sets the formatting for how the outline of the rows on the objectives page */
     border: 1px solid black;
     padding: 8px;
     text-align: left;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) { /* This sets the formatting for the even rows on the objectives page */
     background-color: #f2f2f2;
 }
 
@@ -116,7 +116,7 @@ button:active {
     transform: translateY(4px); /* This moves the button down 4 pixels when clicked */
 }
 
-#palindrome {
+#palindrome { /* This sets the formatting for the palindrome page */
     width: 300px; 
     height: 30px;
     padding: 5px;
@@ -124,14 +124,14 @@ button:active {
     border: 1px solid #ccc;
 }
 
-#img {
+#img { /* This sets the formatting for the navbar img */
     position: absolute;
     top: 10px;
     left: 10px;
     padding: 10px;
 }
 
-#imageContainer {
+#imageContainer { /* This sets the allignment formatting for the navbar img */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@ button:active {
 
 }
 
-#heheheha {
+#heheheha { /* This sets the formatting for the meme index page */
     max-width: 60%;
 }
 
@@ -175,25 +175,25 @@ button:active {
     transform: translateY(4px); /* This moves the button down 4 pixels when clicked creating the press down effect */
 }
 
-.inputContainer {
+.inputContainer { /* This sets the formatting for the input container on the input validation page this way I can format all of my different box & buttons. */
     min-height: 100vh;
     margin-bottom: -550px;
 }
 
-.Objectives {
+.Objectives { /* This sets the formatting for the objectives page */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#objlist {
+#objlist { /* This sets the formatting for the objectives list on the objectives page */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-footer {
+footer { /* This sets the uniform formatting for the footer */
     display: flex;
     justify-content: flex-end;
     background-color: black; /* This sets the background color of the footer to green */
@@ -205,7 +205,7 @@ footer {
     text-align: right; /* This sets the text alignment to the right */
 }
 
-.sidenav {
+.sidenav { /* This sets the formatting for the side navigation bar */
     height: 100%;
     width: 0;
     position: fixed;
@@ -218,7 +218,7 @@ footer {
     padding-top: 60px;
 }
 
-.sidenav a {
+.sidenav a { /* This sets the formatting for the side navigation bar links */
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -227,11 +227,11 @@ footer {
     transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidenav a:hover { /* This sets the formatting for the side navigation bar links when hovered over */
     color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.sidenav .closebtn { /* This sets the formatting for the close button on the side navigation bar */
     position: absolute;
     top: 0;
     right: 25px;
@@ -239,11 +239,11 @@ footer {
     margin-left: 50px;
 }
 
-#result {
+#result { /* This sets the formatting for the result on the palindrome page */
     color: white;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+@media screen and (max-height: 450px) { /* This sets the formatting for the side navigation bar when the screen is less than 450px in height */
+    .sidenav {padding-top: 15px;} /* This sets the padding of the side navigation bar when the screen is less than 450px in height */
+    .sidenav a {font-size: 18px;} /* This sets the font size of the side navigation bar links when the screen is less than 450px in height */
 }

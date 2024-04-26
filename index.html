@@ -1,60 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Initializes the HTML5 Document type -->
+<html lang="en"> <!-- Sets our page default lang to English -->
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css"> <!-- Links our CSS file to our HTML file -->
 </head>
+
 <body>
-    <div id="video-background">
-        <video playsinline autoplay muted loop>
-            <source src="globe_002.mp4" type="video/mp4">
+    <div id="video-background"> <!-- Creates a div for our video background -->
+        <video playsinline autoplay muted loop> <!-- This creates a video element that constantly plays and is muted -->
+            <source src="globe_002.mp4" type="video/mp4"> <!-- Links our video file to the video element -->
         </video>
     </div>
-    <div class="uniform-header">
-        <h1>Intro to Programming (CSC102)</h1>
-        <p id="subtitle">A beginners introduction to the world of computer science</p>
+
+    <div class="uniform-header"> <!-- Creates a div for our header -->
+        <h1>Intro to Programming (CSC102)</h1> <!-- Creates an h1 element -->
+        <p id="subtitle">A beginners introduction to the world of computer science</p> <!-- Creates a p element with the id of 'subtitle' -->
     </div>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#home">Home</a>
-        <a href="Meme.html">Meme Index</a>
-        <a href="Game.html">Game</a>
-        <a href="Palindrome.html">Palindrome</a>
-        <a href="InputValidation.html">Input Validation</a>
-        <a href="Objectives.html">Objectives</a>
+    
+    <div id="mySidenav" class="sidenav"> <!-- Creates a div for our side navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- Creates a button element that is the X in the corner when someone wants to close the navigation bar; reference line 5-7 closeNav function in functionality.js() -->
+        <a href="index.html">Home</a> <!-- Creates a link to the home page, index.html -->
+        <a href="Meme.html">Meme Index</a> <!-- Creates a link to the Meme Index page, Meme.html -->
+        <a href="Game.html">Game</a> <!-- Creates a link to the Game page, Game.html -->
+        <a href="Palindrome.html">Palindrome</a> <!-- Creates a link to the Palindrome page, Palindrome.html -->
+        <a href="InputValidation.html">Input Validation</a> <!-- Creates a link to the Input Validation page, InputValidation.html -->
+        <a href="Objectives.html">Objectives</a> <!-- Creates a link to the Objectives page, Objectives.html -->
     </div>
 
-    <img id="img" src="logo.png" style="width:120px;cursor:pointer" onclick="openNav()">
-    <script src="functionality.js"></script>
+    <img id="img" src="logo.png" style="width:120px;cursor:pointer" onclick="openNav()"> <!-- Creates an image element that is the logo.png and when clicked it opens the navigation bar; reference line 1-3 openNav function in functionality.js() -->
+    <script src="functionality.js"></script> <!-- Links our JavaScript file to our HTML file -->
 
-    <h2>Joey Monroe</h2>
-    <p id="subtitle">Below is a small bit of my professional experience</p>
+    <h2>Joey Monroe</h2> <!-- Creates an h2 element that's my name -->
+    <p id="subtitle">Below is a small bit of my professional experience</p> <!-- Creates a p element with the id of 'subtitle' that showcases my professional experience -->
 
-    <table>
-        <tr>
-            <th>Programming Experience</th>
-            <td>HTML5</td>
-            <td>Python</td>
+    <table> <!-- Creates a table element -->
+        <tr> <!-- Creates a table row < tr > -->
+            <th>Programming Experience</th> <!-- Creates a table header < th > -->
+            <td>HTML5</td> <!-- Creates a table data element that falls under the table header -->
+            <td>Python</td> 
             <td>Java Script</td>
             <td>Bash</td>
         </tr>
-        <tr>
-            <th>Certifications</th>
-            <td>CompTIA A+</td>
+        <tr> <!-- Creates a table row < tr > No 2 -->
+            <th>Certifications</th> <!-- Creates a table header < th > -->
+            <td>CompTIA A+</td> <!-- Creates a table data element that falls under the table header -->
             <td>CompTIA N+</td>
             <td>Python w/ AI</td>
             <td>Java Script</td>
         </tr>
-        <tr>
-            <th>Work Experience</th>
-            <td>IDS INTL</td>
+        <tr> <!-- Creates a table row < tr > No 3 -->
+            <th>Work Experience</th> <!-- Creates a table header < th > -->
+            <td>IDS INTL</td> <!-- Creates a table data element that falls under the table header -->
             <td>IAP/RMS</td>
             <td>USN</td>
             <td>N/A</td>
         </tr>
     </table>
 
-    <footer>
-        <p>Joey Monroe <br> University of Advancing Technology <br> 2625 W Baseline Rd <br> Tempe, AZ 85283</p>
+    <footer> <!-- Creates a footer element -->
+        <p>Joey Monroe <br> University of Advancing Technology <br> 2625 W Baseline Rd <br> Tempe, AZ 85283</p> <!-- Creates a p element with my name, school, and address -->
     </footer>
 </body>
 </html>
